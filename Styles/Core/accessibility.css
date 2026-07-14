@@ -19,7 +19,6 @@
     display: none;
     position: fixed;
     top: 10%;
-    
     z-index: 4;
 }
 #popup .content
@@ -43,8 +42,8 @@
     display: none;
     font-size: var(--scale-standard);
     font-weight: var(--weight-bold);
-    bottom: 2.5vmax;
-    right: 2.5vmax;
+    bottom: 1vmax;
+    right: 1vmax;
     padding: 0.25rem 0;
     position: fixed;
     height: 2.5rem;
