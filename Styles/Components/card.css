@@ -27,8 +27,9 @@
 {
     font-size: var(--scale-single);
     font-weight: var(--weigh-bold);
-    margin: var(--spacing-default);
+    text-align: center;
     text-shadow: var(--shadow-text);
+    width: 100%;
 }
 .card .title
 {

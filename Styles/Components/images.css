@@ -1,0 +1,21 @@
+.cover
+{
+    border-radius: var(--border-card); 
+    box-shadow: var(--shadow-box);
+    margin: 1rem auto; 
+    width: 95%;
+}
+.screenshot
+{
+    margin: 1rem auto; 
+    width: 100%;
+}
+.cover:hover
+{
+    box-shadow: var(--shadow-box-hover);
+    transform: translateY(-5px);
+}
+.screenshot:hover
+{
+    transform: translateY(-5px);
+}
