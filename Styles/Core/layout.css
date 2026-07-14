@@ -99,27 +99,20 @@ footer
     }
     .branding
     {
+        align-items: center;
         display: flex;
         flex-basis: 40%;
-        align-items: center;
-        text-align: center;
-    }
-    .navigation
-    {
-        flex-basis: 100%;
-        justify-content: flex-end;
-    }
-}
-@media (max-width: 370px) 
-{
-    .branding
-    {
         margin: 0;
     }
     .branding .title
     {
         text-align: center;
         width: 100%;
+    }
+    .navigation
+    {
+        flex-basis: 100%;
+        justify-content: flex-end;
     }
 }
 @media (max-width: 300px) 
