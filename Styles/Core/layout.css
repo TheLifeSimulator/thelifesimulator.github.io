@@ -37,6 +37,10 @@ header
     text-decoration: none;
     width: 20rem;
 }
+.branding a
+{
+    text-decoration: none;
+}
 .branding .tag
 {
     font-size: var(--scale-magnified);
