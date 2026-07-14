@@ -6,9 +6,14 @@
 {
     min-width: 25%;
 }
+#form .options
+{
+    gap: 1rem;
+}
 #form .condensed
 {
-    width: 90%;
+    width: 100%;
+    margin: 0;
 }
 #form textarea
 {
@@ -26,8 +31,13 @@
     {
         flex-direction: column;
     }
+    #form .options
+    {
+        gap: 0;
+    }
     #form .condensed
     {
-       width: 100%;
+       width: 95%;
+       margin: var(--spacing-single);
     }
 }
