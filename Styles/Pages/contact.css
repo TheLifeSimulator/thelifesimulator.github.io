@@ -1,0 +1,33 @@
+.flex .columns
+{
+    flex-grow: 1;
+}
+.flex .card
+{
+    min-width: 25%;
+}
+#form .condensed
+{
+    width: 90%;
+}
+#form textarea
+{
+    height: 10vh;
+    max-width: 90%;
+}
+#form .disclaimer
+{
+    margin-top: var(--spacing-single);
+}
+/* Responsiveness */
+@media (max-width: 1000px) 
+{
+    #form #moniker
+    {
+        flex-direction: column;
+    }
+    #form .condensed
+    {
+       width: 100%;
+    }
+}

@@ -1,0 +1,8 @@
+main
+{
+    min-height: 145dvh;
+}
+main .hero
+{
+    flex-grow: 1;
+}

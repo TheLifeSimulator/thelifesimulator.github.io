@@ -1,0 +1,32 @@
+button, .button
+{
+    background-color: var(--color-standard-accent);
+    box-shadow: var(--shadow-button);
+    border: 0rem;
+    border-radius: var( --border-button);
+    color: white;
+    font-size: var(--scale-magnified);
+    font-style: italic;
+    font-weight: var(--weight-bold);
+    padding: var(--spacing-standard);
+    text-shadow: var(--shadow-text);
+    width: clamp(10rem, 15vw, 15rem);
+}
+button a
+{
+    text-decoration: none;
+}
+button:enabled:hover
+{
+    transform: scale(1.1);
+    box-shadow: var(--shadow-button-hover);
+}
+/* Containers */
+.controls
+{
+    display: flex;
+    gap: var(--spacing-standard);
+    justify-content: center;
+    padding: var(--spacing-single);
+    margin-top: auto;
+}

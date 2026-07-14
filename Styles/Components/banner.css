@@ -1,0 +1,41 @@
+.strip
+{
+    box-shadow: var(--shadow-box);
+    object-fit: cover;
+    height: 30dvh;
+    width: 100%;
+}
+.banner
+{
+    background-color: transparent;
+    padding: var(--spacing-single);
+    text-align: center;
+}
+.banner:nth-of-type(odd)
+{
+    background-color: var(--color-light-background);
+    box-shadow: var(--shadow-box);
+    color: var(--color-standard-text);
+}
+.banner .title
+{
+    font-size: var(--scale-triple);
+    font-weight: var(--weight-light);
+    margin: var(--spacing-single);
+}
+.banner .description
+{
+    font-size: var(--scale-expanded);
+    font-style: italic;
+    font-weight: var(--weight-thin);
+    margin: var(--spacing-standard);
+}
+.banner .content
+{
+    margin: var(--spacing-single);
+    text-align: left;
+}
+.banner button
+{
+    background-color: var(--color-light-accent);
+}

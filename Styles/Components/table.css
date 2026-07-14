@@ -1,0 +1,98 @@
+#table
+{
+    margin: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#table .title
+{
+    padding: var(--spacing-standard);
+}
+#table h2, #table .section
+{
+    font-size: var(--scale-magnified);
+    padding: 1rem;
+}
+#table button
+{
+    align-self: center;
+    font-size: var(--scale-expanded);
+}
+/* Rows */
+#table .row > *
+{
+    flex-basis: 25%;
+    padding: 0.5rem;
+}
+#table .row
+{
+    display: flex;
+    background-color: var(--color-dark-accent);
+    border-radius: 5rem;
+    box-shadow: var(--shadow-box);
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.5rem;
+    overflow: hidden;
+    padding: 2rem;
+}
+#table .row:hover
+{
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-box-hover);
+}
+#table .row:nth-last-of-type(even)
+{
+    background-color: var(--color-light-accent);
+}
+/* Content */
+#table #template
+{
+    display: none;
+}
+#table #headings
+{
+    background-color: white;
+    color: black;
+    padding: 0 1rem;
+    position: sticky;
+    top: calc(var(--height-header) + 20px);
+    z-index: 2;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) 
+{
+    #table .row #information 
+    {
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 500px) 
+{
+    #table .row
+    {
+        flex-direction: column;
+    }
+    #table .row #information
+    {
+        flex-basis: 25%;
+    }
+    #table #headings #entry, #table #headings #information
+    {
+        text-align: center;
+    }
+}
+@media (max-width: 300px) 
+{
+    #table #headings
+    {
+        position: relative;
+        top: 0;
+    }
+    #table .row:hover
+    {
+        transform: none;
+    }
+}

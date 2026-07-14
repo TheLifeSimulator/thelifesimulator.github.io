@@ -1,0 +1,29 @@
+.hero
+{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    min-height: 92dvh;
+    padding: var(--spacing-standard);
+}
+/* Content */
+.hero .title
+{
+    font-size: var(--scale-quadruple);
+    font-weight: var(--weight-bold);
+    margin: 15% 1rem 1rem 1rem;
+}
+.hero .description
+{
+    font-size: var(--scale-double);
+    font-style: italic;
+    font-weight: var(--weight-thin);
+    margin: var(--spacing-single);
+}
+.hero button
+{
+    background-color: var(--color-light-accent);
+    font-size: var(--scale-double);
+    width: 15rem;
+}

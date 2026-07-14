@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LifeSimulator | Contact</title>
+        <link rel="icon" type="image/x-icon" href="../Assets/Icons/favicon.ico">
+        <!-- Core -->
+        <link rel="stylesheet" href="../Styles/Pages/contact.css">
+        <link rel="stylesheet" href="../Styles/Core/accessibility.css">
+        <link rel="stylesheet" href="../Styles/Core/layout.css">
+        <link rel="stylesheet" href="../Styles/Core/theme.css">
+        <!-- Components -->
+        <link rel="stylesheet" href="../Styles/Components/buttons.css">
+        <link rel="stylesheet" href="../Styles/Components/card.css">
+        <link rel="stylesheet" href="../Styles/Components/flex.css">
+        <link rel="stylesheet" href="../Styles/Components/forms.css">
+        <link rel="stylesheet" href="../Styles/Components/input.css">
+        <link rel="stylesheet" href="../Styles/Components/ribbon.css">
+        <!-- Scripts -->
+        <script src="../Scripts/accessibility.js" defer></script>
+        <script src="../Scripts/contact.js" defer></script>
+    </head>
+    <body>
+        <button onclick="window.location.href='#content'" id="skip">Skip to content.</button>
+        <header>
+            <div class="branding">
+                <a class="title" href="../index.html">LifeSimulator</a>
+            </div>
+            <div class="navigation">
+                <a id="about" href="about.html">About</a>
+                <p class="divider">|</p>
+                <a class="current" id="contact" href="contact.html">Contact</a>
+                <p class="divider">|</p>
+                <a id="docs" href="../construction.html">Docs</a>
+            </div>
+        </header>
+        <main id="content">
+            <div class="ribbon" id="shadowed" style="background-color: var(--color-light-accent);">
+                <h3 class="title">Send a message!</h3>
+                <p class="description">
+                    What you have to say is important! 
+                    Please allow for up to <b>48 hours</b> for me to process your request. 
+                    I will <em class="underline">never</em> ask for personal information, such as usernames, passwords, or payment information unless otherwise agreed. 
+                    <b>Verify the sender</b> of all emails before replying to any message.</p>
+                </p>
+            </div>
+            <div class="flex">
+                <div class="columns">
+                    <div class="card" id="form">
+                        <h1 class="title">Submit a <b class="underline">bug or help resuest</b>.</h1>
+                        <form class="interface" id="contact" action="/contact" method="post">
+                            <div class="field">
+                                <label>Name</label>
+                                <div class="content">
+                                    <div id="moniker" class="options">
+                                        <input class="condensed" type="text" name="first_name" placeholder="First Name"">
+                                        <input class="condensed" type="text" name="last_name" placeholder="Last Name"">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Email*</label>
+                                <input type="email" name="address" placeholder="Enter your email." required>
+                                <div class="content">
+                                    <div class="options">
+                                        <input class="checkbox" type="checkbox" name="subscribe" value="subscribe" checked="true" required>
+                                        <p>Subscribe to our newsletter.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Message*</label>
+                                <textarea type="text" name="message" placeholder="Enter your message." required></textarea>
+                            </div>
+                            <p id="status" aria-live="polite"></p>
+                            <button id="submit" type="submit">Send</button>
+                        </form>
+                        <p class="disclaimer">* This field is required.<br>
+                            Your personal information will not be sold or distributed to any other third party.</p>
+                    </div>
+                    <div class="card" id="information">
+                        <h1 class="title">Want to be direct?</h1>
+                        <p class="subtitle">There are other ways to connect!<br>If you'd like to <em class="underline">chat</em> sooner, here's how:</p>
+                        <ul class="list">
+                            <li><em>For game related questions and issues:</em><br>
+                                <br>
+                                Send a message over the help form with relevant information.<br>
+                                Be as detailed as possible when describing your bug.<br>
+                            </li><br>
+                            <li><em>Message me over email at <a href="mailto:thelifesimulator@gmail.com">thelifesimulator@gmail.com</a>:</em><br>
+                                <br>
+                                I'll be sure to follow up in about 48 hours to provide an update.<br>
+                                If you need to send screenshorts relating to your bug, be sure to send them from the same email address.<br>
+                            </li><br>
+                            <lI><em>You can also find me on these websites:<br></em></lI>
+                            <div class="card" id="links">
+                                <p class="content"><a href="https://lifesimulator.itch.io/">@LifeSimulator</a> on <em>Itch</em></p>
+                                <p class="content"><a href="https://github.com/TheLifeSimulator">@TheLifeSimulator</a> on <em>GitHub</em></p>
+                                <p class="content"><a href="https://play.unity.com/en/user/3d9ea609-8a01-4d32-87d4-be1bc4bb88f6">@TheLifeSimultor</a> on <em>Unity Play</em></p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="copyright">© 2026 LifeSimulator</p>
+        </footer>
+        <button id="return" aria-label="Return to top.">↑</button>
+    </body>
+</html>

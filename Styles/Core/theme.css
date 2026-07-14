@@ -1,0 +1,103 @@
+/* Core */
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+:root 
+{   
+    /* Borders */
+    --border-button: 1rem;
+    --border-card: 2rem;
+    /* Color Scheme */
+    --color-dark-background: rgb(10, 10, 10);
+    --color-standard-background: rgb(20, 20, 20);
+    --color-light-background: rgb(30, 30, 30);
+    --color-dark-accent: rgb(0, 75, 40);
+    --color-standard-accent: rgb(0,100,50);
+    --color-light-accent: rgb(0, 125, 60);
+    --color-dark-shadow: rgb(0,0,0);
+    --color-standard-shadow: rgb(5,5,5);
+    --color-light-shadow: rgb(10,10,710);
+    --color-standard-text: rgb(255, 255, 255);
+    /* Font Sizing 1rem:100rem */
+    --scale-quadruple: clamp(2rem, 4vw, 4rem);
+    --scale-triple: clamp(1.75rem, 3vw, 3rem);
+    --scale-double: clamp(1.5rem, 2vw, 2rem);
+    --scale-expanded: clamp(1.25rem, 1.5vw, 1.5rem);
+    --scale-magnified: clamp(1rem, 1.25vw, 1.25rem);
+    --scale-standard: clamp(0.75rem, 1vw, 1rem);
+    --scale-minimized: clamp(0.5rem, 0.75vw, 0.75rem);
+    /* Font Weight */
+    --weight-bold: 800;
+    --weight-standard: 400;
+    --weight-light: 300;
+    --weight-thin: 200;
+    /* Layout */
+    --height-header: 100px;
+    /* Shadows & Offsets */
+    --shadow-button: 0vw 0.25vh 0.5rem var(--color-standard-shadow);
+    --shadow-button-hover: 0vw 0.5vh 1rem var(--color-dark-shadow);
+    --shadow-box: 0vw 0.5vh 1rem var(--color-standard-shadow);
+    --shadow-box-hover: 0vw 1vh 2rem var(--color-dark-shadow);
+    --shadow-text: 0vw 0.1vh 0.2rem var(--color-standard-shadow);
+    --shadow-text-hover: 0vw 0.2vh 0.5rem var(--color-standard-shadow);
+    /* Spacing */
+    --spacing-triple: 3rem;
+    --spacing-double: 2rem;
+    --spacing-single: 1rem;
+    --spacing-standard: 0.5rem;
+    --spacing-minimal: 0.25rem;
+}
+/* Stylization */
+a
+{
+    color: var(--color-standard-text);
+}
+.highlight
+{
+    background-color: rgba(255,255,0,0.75);
+}
+.underline
+{
+    text-decoration: underline;
+}
+.title
+{
+    text-shadow: var(--shadow-text);
+}
+#visual
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/* Responsiveness */
+@media (min-width: 901px) 
+{
+    :root
+    {
+        --height-header: 40px;
+    }
+}
+@media (max-width: 900px) 
+{
+    :root
+    {
+        --height-header: 45px;
+    }
+}
+@media (max-width: 300px) 
+{
+    :root
+    {
+        --height-header: 20px;
+        --scale-quadruple: clamp(1.5rem, 4vw, 4rem);
+        --scale-triple: clamp(1.25rem, 3vw, 3rem);
+        --scale-double: clamp(1rem, 2vw, 2rem);
+        --scale-expanded: clamp(0.75rem, 1.5vw, 1.5rem);
+        --scale-magnified: clamp(0.5rem, 1.25vw, 1.25rem);
+        --scale-standard: clamp(0.25rem, 1vw, 1rem);
+        --scale-minimized: clamp(0.25rem, 0.75vw, 0.75rem);
+    }
+}

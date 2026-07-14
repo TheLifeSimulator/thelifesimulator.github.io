@@ -1,0 +1,34 @@
+.flex
+{
+    background-color: var(--color-light-background);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: auto;
+    padding: var(--spacing-standard);
+}
+.flex .grid
+{
+    display: grid;
+    justify-content: center;
+}
+.flex .columns
+{
+    display: flex;
+    justify-content: center;
+}
+.flex .column .title
+{
+    font-size: var(--scale-double);
+    font-weight: var(--weight-bold);
+    margin: var(--spacing-single);
+    padding: var(--spacing-single)
+}
+/* Responsiveness */
+@media (max-width: 1000px) 
+{
+    .flex .columns
+    {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,88 @@
+/* Core */
+#information, #form
+{
+    background-color: var(--color-standard-accent);
+    flex-basis: 50%;
+}
+#form .interface
+{
+    display: flex;
+    flex-direction: column;
+}
+#form #status
+{
+    font-size: var(--scale-single);
+    padding: var(--spacing-single);
+}
+#submit
+{
+    align-self: center;
+    background-color: var(--color-dark-accent);
+    font-size: var(--scale-magnified);
+    font-style: italic;
+    font-weight: var(--weight-bold);
+    margin: 0.var(--spacing-standard);
+    height: 2.5rem;
+}
+/* Information */
+#information a
+{
+    color: var(--color-standard-text);
+    font-weight: var(--weight-standard);
+    font-size: var(--scale-standard);
+}
+#information #links
+{
+    font-size: var(--scale-single);
+    margin: var(--spacing-single);
+    padding: var(--spacing-double);
+}
+/* Fields */
+.field 
+{
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-single);
+    width: auto;
+}
+.field label
+{
+    text-align: left;
+}
+.field .interface 
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.field .options 
+{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.options .condensed
+{
+    flex-grow: 1;
+}
+.field .checkbox
+{
+    accent-color: var(--color-standard-accent);
+    border-style: none;
+    box-shadow: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+/* Stylization */
+#form .error
+{
+    color: red;
+    font-weight: bold;
+}
+#form .success
+{
+    color: green;
+    font-weight: bold;
+}

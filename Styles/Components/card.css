@@ -1,0 +1,70 @@
+.card
+{
+    display: flex;
+    background-color: var(--color-standard-background);
+    border-radius: var( --border-card);
+    box-shadow: var(--shadow-box);
+    flex-direction: column;
+    margin: var(--spacing-single);
+    padding: var(--spacing-single);
+    width: auto;
+}
+.card .card
+{
+    background-color: var(--color-dark-background);
+}
+.card #tag
+{
+    background-color: var(--color-standard-accent);
+}
+.card:hover
+{
+    box-shadow: var(--shadow-box-hover);
+    transform: translateY(-5px);
+}
+/* Content */
+.card .tag
+{
+    font-size: var(--scale-single);
+    font-weight: var(--weigh-bold);
+    margin: var(--spacing-default);
+    text-shadow: var(--shadow-text);
+}
+.card .title
+{
+    font-size: var(--scale-double);
+    font-weight: var(--weigh-standard);
+    margin: var(--spacing-single);
+}
+.card .subtitle
+{
+    font-size: var(--scale-double);
+    font-weight: var(--weight-bold);
+    margin: var(--spacing-single);
+}
+.card .content
+{
+    font-size: var(--scale-single);
+    font-weight: var(--weight-thin);
+    margin: var(--spacing-single);
+}
+.card .description
+{
+    font-size: var(--scale-single);
+    font-style: italic;
+    font-weight: var(--weight-thin);
+    margin:  var(--spacing-double);
+    text-align: center;
+}
+.card .list
+{
+    margin: var(--spacing-single);
+    justify-self: center;
+    text-align: left;
+}
+.card .list li
+{
+    font-weight: var(--weight-thin);
+    padding-bottom: var(--spacing-standard);
+    margin-left: var(--spacing-double);
+}

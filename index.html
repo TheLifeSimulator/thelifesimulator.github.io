@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LifeSimulator</title>
+        <link rel="icon" type="image/x-icon" href="/Assets/Icons/favicon.ico">
+        <!-- Core -->
+        <link rel="stylesheet" href="Styles/Pages/home.css">
+        <link rel="stylesheet" href="Styles/Core/accessibility.css">
+        <link rel="stylesheet" href="Styles/Core/layout.css">
+        <link rel="stylesheet" href="Styles/Core/theme.css">
+        <!-- Components -->
+        <link rel="stylesheet" href="Styles/Components/buttons.css">
+        <link rel="stylesheet" href="Styles/Components/card.css">
+        <link rel="stylesheet" href="Styles/Components/flex.css">
+        <link rel="stylesheet" href="Styles/Components/hero.css">
+        <!-- Scripts -->
+        <script src="Scripts/accessibility.js" defer></script>
+    </head>
+    <body>
+        <button onclick="window.location.href='#content'" id="skip">Skip to content.</button>
+        <header>
+            <div class="branding">
+                <h2 class="title">LifeSimulator</h2>
+            </div>
+            <div class="navigation">
+                <a id="Pricing" href="Pages/about.html">About</a>
+                <p class="divider">|</p>
+                <a id="Pricing" href="Pages/contact.html">Contact</a>
+                <p class="divider">|</p>
+                <a id="services" href="construction.html">Docs</a>
+            </div>
+        </header>
+        <main id="content">
+            <div class="hero" id="visual" style="background-image: url(../Assets/Images/LifeSim_Splash.png);">
+                <h1 class="title">LifeSim</h1>
+                <h3 class="description">A modern cellular evolutionary simulator.</em></h3>
+                <div class="controls">
+                    <button><a href="https://lifesimulator.itch.io/lifesim'">Buy Now</a></button>
+                </div>
+                <p class="disclaimer">Try out the free browser <em>DEMO</em> below! ↓</p>
+            </div>
+            <div class="flex">
+                <div class="columns">
+                    <div class="column">
+                        <h2 class="title">Description</h2>
+                        <div class="card">
+                            <img style="border-radius: var(--border-card); margin: 1rem auto; width: 95%;" src="../Assets/Images/LifeSim_Cover.png">
+                            <p class="content"><strong>LifeSim</strong> is an interactive evolutionary sandbox where you watch, or influence, digital organisms evolve over hundreds of generations. Cells compete for resources, reproduce with genetic variation, and adapt to their environment.</p>
+                            <p class="content">You can observe passively or intervene directly. Inspect or modify any cell's genetics, and directly control their behavior. Force mutations. Infect or cure populations. Endless simulations, in an infinite space.</p>
+                            <div class="card">
+                                <h4 class="subtitle">How is it different?</h4>
+                                <ul class="list">
+                                    <li>Behaviors, interactions, & speciation are all emergent from simple rules, & never the same twice.</li>
+                                    <li>Immunity, predation, and reproduction compete as evolutionary pressures that spur continuous adaptation.</li>
+                                    <li>Viruses mutate independently inside hosts, & follow genetic lineages, forcing an evolutionary arms race.</li>
+                                </ul>
+                            </div>
+                            <p class="description"><em>In <strong>LifeSim</strong>, there are no predetermined outcomes. Watch real emergence arise from genetic variance and viral pressure.</em></p>
+                            <div class="controls">
+                                <button><a href="https://play.unity.com/en/games/11efddc8-3649-4b59-93eb-40856d477ca6/lifesim">Play on Unity</a></button>
+                                <button><a href="https://lifesimulator.itch.io/lifesim-demo'">Demo on Itch</a></button>
+                            </div>
+                        </div>
+                        <h2 class="title">Updates</h2>
+                        <div class="card">
+                            <div class="card" id="tag" style="width: 5.5rem;"><p class="tag">UPCOMING</p></div>
+                            <h3 class="title">Version 0.1.6.A<h3>
+                            <p class="content">Guide evolution more efficiently with new analytical tools, improved visual changes to cells, & better code optimization.</p>
+                            <div class="card">
+                                <h4 class="subtitle">Additions</h4>
+                                <ul class="list">
+                                    <li>Track the state of the world over every minute using visual analytics bar charts.</li>
+                                    <li>New camera controls in the inspector, coordinates display, and session data persistence.</li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <h4 class="subtitle">Changes</h4>
+                                <ul class="list">
+                                    <li>Cells now have transparent membranes and opaque nuclei that are proportional to their lifecycle.</li>
+                                    <li>Split up several inspector panels and added new subsection titles to a few components.</li>
+                                    <li>Viruses now persist and are more prevalent when performance throttling is enabled.</li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <h4 class="subtitle">Fixes</h4>
+                                <ul class="list">
+                                    <li>Resolved a bug that prevented virion from exporting & importing properly.</li>
+                                </ul>
+                            </div> 
+                            <div class="card">
+                                <h4 class="subtitle">Planned</h4>
+                                <ul class="list">
+                                    <li>Anayltics toolbar icons within the 'Details' panel for increased usability and clarity.</li>
+                                    <li>External file importing and exporting for session analytics to track progress indefinitely.</li>
+                                    <li>'Group' function that will simultaneously allow multiple cells to be selected and manipulated.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card" id="tag" style="width: 6.5rem;"><p class="tag">July 08, 2026</p></div>
+                            <h3 class="title">Version 0.1.5.A</h3>
+                            <p class="content">Several critical bug fixes, major backend improvements & overhaul, and a visual game session management framework.</p>
+                            <div class="card">
+                                <h3 class="subtitle">Additions</h3>
+                                <ul class="list">
+                                    <li>Save or load session data from external files stored within the application persistent data.</li>
+                                    <li>Visual-based navigation system for saving, loading, duplicating, and deleting session files.</li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <h3 class="subtitle">Changes</h3>
+                                <ul class="list">
+                                    <li>Improved performance in the sorter to reduce computational complexity for large sessions.</li>
+                                    <li>Rebuilt & optimized core interface infrastructure, utilizing component caching and storage.</li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <h3 class="subtitle">Fixes</h3>
+                                <ul class="list">
+                                    <li>Addressed a bug where the ID for populated cells would default to '1'.,</li>
+                                    <li>Identified a bug that prevented viruses from trasfering target gene upon cloning.</li>
+                                    <li>The 'Drag' function now locks cells in at their current height in space.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <button><a href="https://lifesimulator.itch.io/lifesim/devlog">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="column"  style="width: 100%">
+                        <h2 class="title">Screenshots</h2>
+                        <div class="card" style="padding: var(--spacing-single);">
+                            <img style="margin: 1rem auto; width: 100%;" src="../Assets/Images/LifeSim_Screenshot_1.png">
+                            <img style="margin: 1rem auto; width: 100%;" src="../Assets/Images/LifeSim_Screenshot_2.png">
+                            <img style="margin: 1rem auto; width: 100%;" src="../Assets/Images/LifeSim_Screenshot_3.png">
+                            <img style="margin: 1rem auto; width: 95%;" src="../Assets/Images/LifeSim_Screenshot_4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="copyright">© 2026 LifeSimulator</p>
+        </footer>
+        <button id="return" aria-label="Return to top.">↑</button>
+    </body>
+</html>
