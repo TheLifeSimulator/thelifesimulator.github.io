@@ -6,38 +6,3 @@
 {
     min-width: 25%;
 }
-#form .options
-{
-    gap: 1rem;
-}
-#form .condensed
-{
-    width: 100%;
-    margin: 0;
-}
-#form textarea
-{
-    height: 10vh;
-    max-width: 90%;
-}
-#form .disclaimer
-{
-    margin-top: var(--spacing-single);
-}
-/* Responsiveness */
-@media (max-width: 1000px) 
-{
-    #form #moniker
-    {
-        flex-direction: column;
-    }
-    #form .options
-    {
-        gap: 0;
-    }
-    #form .condensed
-    {
-       width: 95%;
-       margin: var(--spacing-single);
-    }
-}

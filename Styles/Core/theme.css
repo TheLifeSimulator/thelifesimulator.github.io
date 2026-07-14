@@ -84,14 +84,14 @@ a
 {
     :root
     {
-        --height-header: 45px;
+        --height-header: 70px;
     }
 }
 @media (max-width: 300px) 
 {
     :root
     {
-        --height-header: 20px;
+        --height-header: 50px;
         --scale-quadruple: clamp(1.5rem, 4vw, 4rem);
         --scale-triple: clamp(1.25rem, 3vw, 3rem);
         --scale-double: clamp(1rem, 2vw, 2rem);

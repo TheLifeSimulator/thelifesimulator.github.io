@@ -15,11 +15,29 @@ button, .button
 button a
 {
     text-decoration: none;
+    text-align: center;
 }
 button:enabled:hover
 {
     transform: scale(1.1);
     box-shadow: var(--shadow-button-hover);
+}
+.menu
+{
+    background-color: var(--color-standard-background);
+    margin: var(--spacing-standard);
+    height: 2rem;
+    width: 2rem;
+}
+.menu, .round
+{
+    border-radius: 5rem;
+    padding: 0.25rem 0;
+}
+.menu a, .round a
+{
+    font-weight: var(--weight-bold);
+    width: 100%;
 }
 /* Containers */
 .controls
@@ -29,4 +47,12 @@ button:enabled:hover
     justify-content: center;
     padding: var(--spacing-single);
     margin-top: auto;
+}
+@media (max-width: 300px) 
+{
+    .menu
+    {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
 }

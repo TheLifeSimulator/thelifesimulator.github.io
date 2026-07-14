@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="Styles/Components/images.css">
         <!-- Scripts -->
         <script src="Scripts/accessibility.js" defer></script>
+        <script src="Scripts/gallery.js" defer></script>
+        <script src="Scripts/index.js" defer></script>
     </head>
     <body>
         <button onclick="window.location.href='#content'" id="skip">Skip to content.</button>
@@ -26,11 +28,10 @@
                 <h2 class="title">LifeSimulator</h2>
             </div>
             <div class="navigation">
-                <a id="Pricing" href="Pages/about.html">About</a>
+                <button class="menu"><a id="about" href="Pages/about.html">?</a></button>
+                <button class="menu"><a id="contact" href="Pages/contact.html">@</a></button>
                 <p class="divider">|</p>
-                <a id="Pricing" href="Pages/contact.html">Contact</a>
-                <p class="divider">|</p>
-                <a id="services" href="construction.html">Docs</a>
+                <button class="menu"><a id="docs" href="construction.html">/</a></button>
             </div>
         </header>
         <main id="content">
@@ -120,7 +121,7 @@
                             <div class="card">
                                 <h3 class="subtitle">Fixes</h3>
                                 <ul class="list">
-                                    <li>Addressed a bug where the ID for populated cells would default to '1'.,</li>
+                                    <li>Addressed a bug where the ID for populated cells would default to '1'.</li>
                                     <li>Identified a bug that prevented viruses from trasfering target gene upon cloning.</li>
                                     <li>The 'Drag' function now locks cells in at their current height in space.</li>
                                 </ul>
@@ -130,13 +131,9 @@
                             <button><a href="https://lifesimulator.itch.io/lifesim/devlog">View More</a></button>
                         </div>
                     </div>
-                    <div class="column"  style="width: 100%">
+                    <div id="screenshots" class="column"  style="width: 100%">
                         <h2 class="title">Screenshots</h2>
-                        <div class="card" style="padding: var(--spacing-single);">
-                            <img class="screenshot" src="Assets/Images/LifeSim_Screenshot_1.png">
-                            <img class="screenshot" src="Assets/Images/LifeSim_Screenshot_2.png">
-                            <img class="screenshot" src="Assets/Images/LifeSim_Screenshot_3.png">
-                            <img class="screenshot" src="Assets/Images/LifeSim_Screenshot_4.png">
+                        <div id="content" class="card" style="padding: var(--spacing-single);">
                         </div>
                     </div>
                 </div>

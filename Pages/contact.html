@@ -15,10 +15,12 @@
         <link rel="stylesheet" href="../Styles/Components/card.css">
         <link rel="stylesheet" href="../Styles/Components/flex.css">
         <link rel="stylesheet" href="../Styles/Components/forms.css">
+        <link rel="stylesheet" href="../Styles/Components/images.css">
         <link rel="stylesheet" href="../Styles/Components/input.css">
         <link rel="stylesheet" href="../Styles/Components/ribbon.css">
         <!-- Scripts -->
         <script src="../Scripts/accessibility.js" defer></script>
+        <script src="../Scripts/forms.js" defer></script>
         <script src="../Scripts/contact.js" defer></script>
     </head>
     <body>
@@ -28,23 +30,24 @@
                 <h2 class="title"><a href="../index.html">LifeSimulator</a></h2>
             </div>
             <div class="navigation">
-                <a id="about" href="about.html">About</a>
+                <button class="menu"><a id="about" href="about.html">?</a></button>
+                <button class="menu"><a class="current" id="contact" href="contact.html">@</a></button>
                 <p class="divider">|</p>
-                <a class="current" id="contact" href="contact.html">Contact</a>
-                <p class="divider">|</p>
-                <a id="docs" href="../construction.html">Docs</a>
+                <button class="menu"><a id="docs" href="../construction.html">/</a></button>
             </div>
         </header>
         <main id="content">
             <div class="ribbon" id="shadowed" style="background-color: var(--color-light-accent);">
                 <h3 class="title">Send a message!</h3>
-                <p class="description">
-                    What you have to say is important! 
-                    Please allow for up to <b>48 hours</b> for me to process your request. 
-                    I will <em class="underline">never</em> ask for personal information, such as usernames, passwords, or payment information unless otherwise agreed. 
-                    <b>Verify the sender</b> of all emails before replying to any message.</p>
-                </p>
+                <div class="card">
+                    <ul class="list">
+                        <li>Please allow for at least <b>48 hours</b> for me to process your request.</li>
+                        <li>I will <em class="underline">never</em> ask for personal information, such as usernames, passwords, or payment information unless otherwise agreed.
+                        <li><b>Verify the sender</b> of all emails before replying to any message.</p></li>
+                    </ul>
+                </div>
             </div>
+            <img class="cover" src="../Assets/Images/LifeSim_Compact.png">
             <div class="flex">
                 <div class="columns">
                     <div class="card" id="form">
@@ -91,7 +94,7 @@
                             <li><em>Message me over email at <a href="mailto:thelifesimulator@gmail.com">thelifesimulator@gmail.com</a>:</em><br>
                                 <br>
                                 I'll be sure to follow up in about 48 hours to provide an update.<br>
-                                If you need to send screenshorts relating to your bug, be sure to send them from the same email address.<br>
+                                If you need to send screenshots relating to your bug, be sure to send them from the same email address.<br>
                             </li><br>
                             <lI><em>You can also find me on these websites:<br></em></lI>
                             <div class="card" id="links">

@@ -38,10 +38,14 @@
 /* Return-To-Page */
 #return
 {
+    background-color: var(--color-light-accent);
+    border-radius: 5rem;
     display: none;
+    font-size: var(--scale-standard);
+    font-weight: var(--weight-bold);
     bottom: 2.5vmax;
     right: 2.5vmax;
-    padding-bottom: 0.5rem;
+    padding: 0.25rem 0;
     position: fixed;
     height: 2.5rem;
     width: 2.5rem;

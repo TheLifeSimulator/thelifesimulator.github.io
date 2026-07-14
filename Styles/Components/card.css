@@ -15,7 +15,7 @@
 }
 .card #tag
 {
-    background-color: var(--color-standard-accent);
+    background-color: var(--color-light-accent);
 }
 .card:hover
 {

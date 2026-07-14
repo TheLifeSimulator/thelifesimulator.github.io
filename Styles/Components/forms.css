@@ -9,12 +9,17 @@
     display: flex;
     flex-direction: column;
 }
+#form textarea
+{
+    height: 10vh;
+    max-width: 90%;
+}
 #form #status
 {
     font-size: var(--scale-single);
     padding: var(--spacing-single);
 }
-#submit
+#form #submit
 {
     align-self: center;
     background-color: var(--color-dark-accent);
@@ -23,6 +28,20 @@
     font-weight: var(--weight-bold);
     margin: 0.var(--spacing-standard);
     height: 2.5rem;
+}
+#form .disclaimer
+{
+    margin-top: var(--spacing-single);
+}
+#form .error
+{
+    color: red;
+    font-weight: bold;
+}
+#form .success
+{
+    color: green;
+    font-weight: bold;
 }
 /* Information */
 #information a
@@ -63,10 +82,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 1rem;
 }
 .options .condensed
 {
     flex-grow: 1;
+    margin: 0;
+    width: 100%;
 }
 .field .checkbox
 {
@@ -76,14 +98,20 @@
     height: 1.5rem;
     width: 1.5rem;
 }
-/* Stylization */
-#form .error
+/* Responsiveness */
+@media (max-width: 1000px) 
 {
-    color: red;
-    font-weight: bold;
-}
-#form .success
-{
-    color: green;
-    font-weight: bold;
+    #form #moniker
+    {
+        flex-direction: column;
+    }
+    #form .options
+    {
+        gap: 0;
+    }
+    #form .condensed
+    {
+       width: 95%;
+       margin: var(--spacing-single);
+    }
 }
