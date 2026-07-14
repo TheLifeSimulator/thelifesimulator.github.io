@@ -33,6 +33,7 @@
 }
 #information #links
 {
+    background-color: var(--color-dark-accent);
     font-size: var(--scale-single);
     margin: var(--spacing-single);
     padding: var(--spacing-double);
