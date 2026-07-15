@@ -49,3 +49,11 @@
     height: 2.5rem;
     width: 2.5rem;
 }
+@media (max-width: 900px) 
+{
+    #return
+    {
+        bottom: 2.5vmax;
+        right: 2.5vmax;
+    }
+}
