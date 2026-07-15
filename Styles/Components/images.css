@@ -19,3 +19,11 @@
 {
     transform: translateY(-5px);
 }
+/* Responsiveness */
+@media (max-width: 900px) 
+{
+    .cover
+    {
+        width: 90%;
+    }
+}
