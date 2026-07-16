@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () =>
         'LifeSim_Screenshot_3.png',
         'LifeSim_Screenshot_4.png',
         'LifeSim_Screenshot_5.png',
-        'LifeSim_Screenshot_6.png'
+        'LifeSim_Screenshot_6.png',
+        'LifeSim_Screenshot_7.png',
+        'LifeSim_Screenshot_8.png'
     ])
 });
