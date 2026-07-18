@@ -1,0 +1,15 @@
+Date: 07/08/2026;
+Release: 0;
+Build: 1;
+Revision: 5;
+Description: Several critical bug fixes, major backend improvements & overhaul, and a visual game session management framework.;
+Additions:
+- Save or load session data from external files stored within the application persistent data.
+- Visual-based navigation system for saving, loading, duplicating, and deleting session files.;
+Changes:
+- Improved performance in the sorter to reduce computational complexity for large sessions.
+- Rebuilt & optimized core interface infrastructure, utilizing component caching and storage.;
+Fixes:
+- Addressed a bug where the ID for populated cells would default to '1'.
+- Identified a bug that prevented viruses from trasfering target gene upon cloning.
+- The 'Drag' function now locks cells in at their current height in space.;

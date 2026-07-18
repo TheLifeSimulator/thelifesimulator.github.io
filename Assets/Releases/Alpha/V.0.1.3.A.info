@@ -1,0 +1,18 @@
+Date: 06/24/2026;
+Release: 0;
+Build: 1;
+Revision: 3;
+Description: Introducing new adaptive player navigation controls, physical displace and drag functions, & core code optimization for smoother sessions. This update adds a framework for game save exporting & importing.;
+Additions:
+- Added adaptive player camera controls for movement and zooming.
+- Dialog popup confirmation when clearing, resetting, or starting a new session.
+- Displace or drag cells using two new interactive function tools.
+- Release logs are now stored locally on device and prepopulated.
+- Version logs now show more detailed information about additions, fixes, & removals.
+- Themed several interface components to provide clearer context of use.
+- Implemented core framework for game save exporting & importing on desktop.;
+Fixes:
+- Backend code optimization to increase performance and reduce redundancy.
+- Fixed the date tag on version release log '0.1.2.A';
+Removals:
+- Cure, infect, duplicate, & mutate functions have been removed from the toolbar.;

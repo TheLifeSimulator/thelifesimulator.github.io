@@ -1,0 +1,15 @@
+Date: 06/08/2026;
+Release: 0;
+Build: 1;
+Revision: 1;
+Description: Enjoy a more responsive UI with refreshed visuals, and new gameplay mechanics. This update adds a framework for future mobile & web support.;
+Additions:
+- Cells now displace each other when occupying the same space.
+- The about panel has been modified to reflect DevLogs on Itch.io.
+- The UI now responsively adapts to different displays, orientations, & resolutions.
+- Implemented core framework support for mobile and web-based platforms.;
+Fixes:
+- Infection mechanisms have been rebalanced.
+- Improved controls in the cell inspector for altering genetics.
+- Re-implemented distinct genetic traits for viruses.
+- Added several new metric calculations to the statistics.;

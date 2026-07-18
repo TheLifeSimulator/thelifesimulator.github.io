@@ -14,34 +14,14 @@
         <link rel="stylesheet" href="../Styles/Components/buttons.css">
         <link rel="stylesheet" href="../Styles/Components/card.css">
         <link rel="stylesheet" href="../Styles/Components/flex.css">
-        <link rel="stylesheet" href="../Styles/Components/forms.css">
-        <link rel="stylesheet" href="../Styles/Components/input.css">
-        <link rel="stylesheet" href="../Styles/Components/ribbon.css">
         <!-- Scripts -->
         <script src="../Scripts/accessibility.js" defer></script>
+        <script src="../Scripts/layout.js" defer></script>
     </head>
-    <body>
-        <button onclick="window.location.href='#content'" id="skip">Skip to content.</button>
-        <header>
-            <div class="branding">
-                <h2 class="title"><a href="../index.html">LifeSimulator</a></h2>
-            </div>
-            <div class="navigation">
-                <a id="about" href="about.html">?</a>
-                <p class="divider">|</p>
-                <a id="contact" href="contact.html">@</a>
-                <p class="divider">|</p>
-                <a id="docs" href="docs.html">/</a>
-                <p class="divider">|</p>
-                <a class="current" id="template" href="../template.html">?</a>
-            </div>
-        </header>
-        <main id="content">
-            
-        </main>
-        <footer>
-            <p id="copyright">© 2026 LifeSimulator LLC</p>
-        </footer>
-        <button id="return" aria-label="Return to top.">↑</button>
+    <body id="body">
+        <div id="accessibility"></div>
+        <header id="header"></header>
+        <main id="content"></main>
+        <footer id="footer"></footer>
     </body>
 </html>

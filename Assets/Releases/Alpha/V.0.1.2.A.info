@@ -1,0 +1,14 @@
+Date: 06/15/2026;
+Release: 0;
+Build: 1;
+Revision: 2;
+Description: Minor bug fixes, performance enhancements, & UI tweaks.;
+Additions:
+- Physics now scale dynamically to account for computational performance.
+- Metrics, statistics, and settings have been expanded to provide more oversight.
+- Implemented performance-based population culling and limitations.
+- Viral species are now tracked by their genetic background.;
+Fixes:
+- Fixed an issue where gameplay mechanics wouldn't sleep on pause.
+- The cell inspector now opens automatically on mobile layouts.
+- Individual cell genetic controls now scale appropriately on mobile.;

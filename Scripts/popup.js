@@ -18,10 +18,10 @@ class Contents
 const popup = document.getElementById('popup');
 if (popup != null)
 {
-  function toggle(active) { popup.style.display = active ? 'flex' : 'none'; }
-  function set(active, dimension, content)
+  function popup_toggle(active) { popup.style.display = active ? 'flex' : 'none'; }
+  function popup_set(active, dimension, content)
   {
-    togglePopup(active);
+    popup_toggle(active);
     popup.style.height = dimension.height;
     popup.style.width = dimension.width;
     var title = popup.querySelector('.title');

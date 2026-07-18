@@ -20,20 +20,12 @@
         <script src="Scripts/accessibility.js" defer></script>
         <script src="Scripts/gallery.js" defer></script>
         <script src="Scripts/index.js" defer></script>
+        <script src="Scripts/layout.js" defer></script>
+        <script src="Scripts/log.js" defer></script>
     </head>
-    <body>
-        <button onclick="window.location.href='#content'" id="skip">Skip to content.</button>
-        <header>
-            <div class="branding">
-                <h2 class="title">LifeSimulator</h2>
-            </div>
-            <div class="navigation">
-                <button class="menu"><a id="about" href="Pages/about.html">?</a></button>
-                <button class="menu"><a id="contact" href="Pages/contact.html">@</a></button>
-                <p class="divider">|</p>
-                <button class="menu"><a id="docs" href="construction.html">/</a></button>
-            </div>
-        </header>
+    <body id="body">
+        <div id="accessibility"></div>
+        <header id="header"></header>
         <main id="content">
             <div class="hero" id="visual" style="background-image: url(Assets/Images/LifeSim_Hero.png);">
                 <h1 class="title">LifeSim</h1>
@@ -61,72 +53,12 @@
                             </div>
                             <p class="description"><em>In <strong>LifeSim</strong>, there are no predetermined outcomes. Watch real emergence arise from genetic variance and viral pressure.</em></p>
                             <div class="controls">
-                                <button><a href="https://play.unity.com/en/games/11efddc8-3649-4b59-93eb-40856d477ca6/lifesim">Unity</a></button>
                                 <button><a href="https://lifesimulator.itch.io/lifesim-demo'">Itch</a></button>
+                                <button><a href="https://play.unity.com/en/games/11efddc8-3649-4b59-93eb-40856d477ca6/lifesim">Unity</a></button>
                             </div>
                         </div>
                         <h2 class="title">Updates</h2>
-                        <div class="card">
-                            <div class="card" id="tag" style="width: 6.5rem;"><p class="tag">July 15, 2025</p></div>
-                            <h3 class="title">Version 0.1.6.A<h3>
-                            <p class="content">Guide evolution more efficiently with new analytical tools, improved visual changes to cells, & better code optimization.</p>
-                            <div class="card">
-                                <h4 class="subtitle">Additions</h4>
-                                <ul class="list">
-                                    <li>Added the anayltics toolbar to the 'Details' panel above 'Population' section.</li>
-                                    <li>Track the state of the world over every minute using visual analytics bar charts.</li>
-                                    <li>New camera controls in the inspector, a coordinates display, and session data persistence.</li>
-                                </ul>
-                            </div>
-                            <div class="card">
-                                <h4 class="subtitle">Changes</h4>
-                                <ul class="list">
-                                    <li>Cells now have transparent membranes and opaque nuclei that are proportional to their lifecycle.</li>
-                                    <li>Split up several inspector panels, and added new subsection titles to a few components.</li>
-                                    <li>Viruses now persist, and are more prevalent when performance throttling is enabled.</li>
-                                </ul>
-                            </div>
-                            <div class="card">
-                                <h4 class="subtitle">Fixes</h4>
-                                <ul class="list">
-                                    <li>Expanded and reworked object cache for several components.</li>
-                                    <li>Resolved a bug that prevented virion from exporting & importing properly.</li>
-                                </ul>
-                            </div> 
-                            <div class="card">
-                                <h4 class="subtitle">Planned</h4>
-                                <ul class="list">
-                                    <li>'Group' function that will simultaneously allow multiple cells to be selected and manipulated.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card" id="tag" style="width: 6.5rem;"><p class="tag">July 08, 2026</p></div>
-                            <h3 class="title">Version 0.1.5.A</h3>
-                            <p class="content">Several critical bug fixes, major backend improvements & overhaul, and a visual game session management framework.</p>
-                            <div class="card">
-                                <h3 class="subtitle">Additions</h3>
-                                <ul class="list">
-                                    <li>Save or load session data from external files stored within the application persistent data.</li>
-                                    <li>Visual-based navigation system for saving, loading, duplicating, and deleting session files.</li>
-                                </ul>
-                            </div>
-                            <div class="card">
-                                <h3 class="subtitle">Changes</h3>
-                                <ul class="list">
-                                    <li>Improved performance in the sorter to reduce computational complexity for large sessions.</li>
-                                    <li>Rebuilt & optimized core interface infrastructure, utilizing component caching and storage.</li>
-                                </ul>
-                            </div>
-                            <div class="card">
-                                <h3 class="subtitle">Fixes</h3>
-                                <ul class="list">
-                                    <li>Addressed a bug where the ID for populated cells would default to '1'.</li>
-                                    <li>Identified a bug that prevented viruses from transferring target gene upon cloning.</li>
-                                    <li>The 'Drag' function now locks cells in at their current height in space.</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div id="logs"></div>
                         <div class="controls">
                             <button><a href="https://lifesimulator.itch.io/lifesim/devlog">View More</a></button>
                         </div>
@@ -139,9 +71,6 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <p id="copyright">© 2026 LifeSimulator</p>
-        </footer>
-        <button id="return" aria-label="Return to top.">↑</button>
+        <footer id="footer"></footer>
     </body>
 </html>

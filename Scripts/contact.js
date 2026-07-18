@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', () =>
             _template: 'table',
             _captcha: 'false'
         };
-        send(id, payload);
+        form_send(id, payload);
     });
 });

@@ -14,19 +14,13 @@
         <link rel="stylesheet" href="Styles/Components/buttons.css">
         <link rel="stylesheet" href="Styles/Components/card.css">
         <link rel="stylesheet" href="Styles/Components/ribbon.css">
+        <!-- Scripts -->
+        <script src="../Scripts/accessibility.js" defer></script>
+        <script src="../Scripts/layout.js" defer></script>
     </head>
-    <body>
-        <header>
-            <div class="branding">
-                <h2 class="title"><a href="index.html">LifeSimulator</a></h2>
-            </div>
-            <div class="navigation">
-                <button class="menu"><a id="about" href="Pages/about.html">?</a></button>
-                <button class="menu"><a id="contact" href="Pages/contact.html">@</a></button>
-                <p class="divider">|</p>
-                <button class="menu"><a id="docs" href="construction.html">/</a></button>
-            </div>
-        </header>
+    <body id="body">
+        <div id="accessibility"></div>
+        <header id="header"></header>
         <main id="visual" style="background-image: url(Assets/Images/LifeSim_404.png)">
             <div class="card">
                 <h2 class="title">Error 404!</h2>
@@ -38,8 +32,6 @@
                 <p class="description">You may be attempting to access a page that does not exist or has been removed! Please ensure the URL is typed correctly in your navigation bar, and refresh the page.</p>
             </div>
         </main>
-        <footer>
-            <p id="copyright">© 2026 LifeSimulator</p>
-        </footer>
+        <footer id="footer"></footer>
     </body>
 </html>

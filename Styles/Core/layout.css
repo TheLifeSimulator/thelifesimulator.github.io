@@ -58,10 +58,6 @@ header
     align-items: center;
     justify-content: center;
 }
-.navigation a
-{
-    font-size: var(--scale-standard);
-}
 .navigation .current
 {
     color: var(--color-standard-accent);

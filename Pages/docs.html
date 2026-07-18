@@ -14,31 +14,56 @@
         <link rel="stylesheet" href="../Styles/Components/buttons.css">
         <link rel="stylesheet" href="../Styles/Components/card.css">
         <link rel="stylesheet" href="../Styles/Components/flex.css">
-        <link rel="stylesheet" href="../Styles/Components/forms.css">
-        <link rel="stylesheet" href="../Styles/Components/input.css">
-        <link rel="stylesheet" href="../Styles/Components/ribbon.css">
+        <link rel="stylesheet" href="../Styles/Components/images.css">
         <!-- Scripts -->
         <script src="../Scripts/accessibility.js" defer></script>
+        <script src="../Scripts/layout.js" defer></script>
+        <script src="../Scripts/log.js"></script>
+        <script src="../Scripts/news.js"></script>
     </head>
-    <body>
-        <button onclick="window.location.href='#content'" id="skip">Skip to content.</button>
-        <header>
-            <div class="branding">
-                <h2 class="title"><a href="../index.html">LifeSimulator</a></h2>
-            </div>
-            <div class="navigation">
-                <button class="menu"><a id="about" href="about.html">?</a></button>
-                <button class="menu"><a id="contact" href="contact.html">@</a></button>
-                <p class="divider">|</p>
-                <button class="menu"><a class="current" id="docs" href="../construction.html">/</a></button>
-            </div>
-        </header>
+    <body id="body">
+        <div id="accessibility"></div>
+        <header id="header" class="docs"></header>
         <main id="content">
-            
+            <h1 class="title">Documents</h1>
+            <img class="cover" src="../Assets/Images/LifeSim_Splash.png">
+            <div class="flex" id="sections">
+                <div class="columns">
+                    <div class="column" style="flex-basis: 66%;">
+                        <h2 class="title">News</h2>
+                        <div id="news">
+                            <script>
+                                news_import("news",  "../Assets/News/Updates/V." + version + ".info")
+                            </script>
+                        </div>
+                        <div id="latest">
+                            <script>
+                                log_import("latest", "../Assets/Releases/Alpha/V." + version + ".info");
+                            </script>
+                        </div>
+                        <div class="controls">
+                            <button><a href="https://lifesimulator.itch.io/lifesim/devlog">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="column" id="logs" style="flex-basis: 33%;">
+                        <h2 class="title">Updates</h2>
+                        <div class="card" id="options">
+                            <button>0.1.6 Alpha</button>
+                            <button>0.1.5 Alpha</button>
+                            <button>0.1.4 Alpha</button>
+                            <button>View All</button>
+                        </div>
+                        <h2 class="title">Archive</h2>
+                        <div class="card" id="options">
+                            <button>0.1.1 Alpha</button>
+                            <button>0.1.2 Alpha</button>
+                            <button>0.1.3 Alpha</button>
+                            <button>View All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer>
-            <p id="copyright">© 2026 LifeSimulator LLC</p>
-        </footer>
-        <button id="return" aria-label="Return to top.">↑</button>
+        <footer id="footer"></footer>
     </body>
 </html>

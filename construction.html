@@ -14,19 +14,13 @@
         <link rel="stylesheet" href="Styles/Components/buttons.css">
         <link rel="stylesheet" href="Styles/Components/card.css">
         <link rel="stylesheet" href="Styles/Components/ribbon.css">
+        <!-- Scripts -->
+        <script src="../Scripts/accessibility.js" defer></script>
+        <script src="../Scripts/layout.js" defer></script>
     </head>
-    <body>
-        <header>
-            <div class="branding">
-                <h2 class="title"><a href="index.html">LifeSimulator</a></h2>
-            </div>
-            <div class="navigation">
-                <button class="menu"><a id="about" href="Pages/about.html">?</a></button>
-                <button class="menu"><a id="contact" href="Pages/contact.html">@</a></button>
-                <p class="divider">|</p>
-                <button class="menu"><a id="docs" href="construction.html">/</a></button>
-            </div>
-        </header>
+    <body id="body">
+        <div id="accessibility"></div>
+        <header id="header"></header>
         <main id="visual" style="background-image: url(Assets/Images/LifeSim_404.png)">
             <div class="card">
                 <h2 class="title">Uh oh!</h2>
@@ -38,8 +32,6 @@
                 <p class="description"> This page will be updated in the future. Check back at a later date to see any new changes, or follow <a href="https://lifesimulator.itch.io">LifeSimulator</a> on <b>Itch.io</b>.</p>
             </div>
         </main>
-        <footer>
-            <p id="copyright">© 2026 LifeSimulator</p>
-        </footer>
+        <footer id="footer"></footer>
     </body>
 </html>

@@ -22,20 +22,18 @@ button:enabled:hover
     transform: scale(1.1);
     box-shadow: var(--shadow-button-hover);
 }
-.menu
+.round
 {
     background-color: var(--color-standard-background);
-    margin: var(--spacing-standard);
+    border-radius: 5rem;
     height: 2rem;
+    margin: var(--spacing-standard);
+    padding: 0.25rem 0;
     width: 2rem;
 }
-.menu, .round
+.round a
 {
-    border-radius: 5rem;
-    padding: 0.25rem 0;
-}
-.menu a, .round a
-{
+    font-size: var(--scale-standard);
     font-weight: var(--weight-bold);
     width: 100%;
 }
@@ -43,7 +41,7 @@ button:enabled:hover
 .controls
 {
     display: flex;
-    gap: var(--spacing-standard);
+    gap: var(--spacing-single);
     justify-content: center;
     padding: var(--spacing-single);
     margin-top: auto;

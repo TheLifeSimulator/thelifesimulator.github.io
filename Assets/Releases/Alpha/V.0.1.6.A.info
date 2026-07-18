@@ -1,0 +1,18 @@
+Date: 07/15/2026;
+Release: 0;
+Build: 1;
+Revision: 6;
+Description: Guide evolution more efficiently with new analytical tools, improved visual changes to cells, & better code optimization.;
+Additions:
+- Added the anayltics toolbar to the 'Details' panel above 'Population' section.
+- Track the state of the world over every minute using visual analytics bar charts.
+- New camera controls in the inspector, a coordinates display, and session data persistence.;
+Changes:
+- Cells now have transparent membranes and opaque nuclei that are proportional to their lifecycle.
+- Split up several inspector panels, and added new subsection titles to a few components.
+- Viruses now persist, and are more prevalent when performance throttling is enabled.;
+Fixes:
+- Expanded and reworked object cache for several components.
+- Resolved a bug that prevented virion from exporting & importing properly.;
+Planned:
+- 'Group' function that will simultaneously allow multiple cells to be selected and manipulated.;

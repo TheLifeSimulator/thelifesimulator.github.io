@@ -1,5 +1,5 @@
 const endpoint = 'https://formsubmit.co/ajax/thelifesimulator@gmail.com';
-function send(id, payload)
+function form_send(id, payload)
 {
     var form = document.querySelector(id);
     var status = document.getElementById('status');

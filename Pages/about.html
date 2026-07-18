@@ -18,20 +18,11 @@
         <link rel="stylesheet" href="../Styles/Components/images.css">
         <!-- Scripts -->
         <script src="../Scripts/accessibility.js" defer></script>
+        <script src="../Scripts/layout.js" defer></script>
     </head>
-    <body>
-        <button onclick="window.location.href='#content'" id="skip">Skip to content.</button>
-        <header>
-            <div class="branding">
-                <h2 class="title"><a href="../index.html">LifeSimulator</a></h2>
-            </div>
-            <div class="navigation">
-                <button class="menu"><a class="current" id="about" href="about.html">?</a></button>
-                <button class="menu"><a id="contact" href="contact.html">@</a></button>
-                <p class="divider">|</p>
-                <button class="menu"><a id="docs" href="../construction.html">/</a></button>
-            </div>
-        </header>
+    <body id="body">
+        <div id="accessibility"></div>
+        <header id="header" class="about"></header>
         <main id="content">
             <div class="stack">
                  <div class="banner" style="background-color: var(--color-dark-accent);">
@@ -55,9 +46,6 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <p id="copyright">© 2026 LifeSimulator</p>
-        </footer>
-        <button id="return" aria-label="Return to top.">↑</button>
+        <footer id="footer"></footer>
     </body>
 </html>

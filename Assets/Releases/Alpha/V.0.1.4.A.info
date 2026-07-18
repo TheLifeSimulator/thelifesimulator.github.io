@@ -1,0 +1,19 @@
+Date: 07/01/2026;
+Release: 0;
+Build: 1;
+Revision: 4;
+Description: Extensive user interface reorganization, new gameplay mechanics, and interactive controls.;
+Additions:
+- Cells wiggle around when coming into contact with each other, and can now move around freely.
+- New 'Maturity' toggle and cell scale slider in the Inspector's cell information panel.
+- Take over cells using the game camera and keyboard controls with the new 'Control' function.
+- Utilize the new color picker tool to change the background, lighting, or alter a cell's appearance.;
+Changes:
+- Bottom and top toolbar footprints have been reduced on desktop, and now float independently.
+- Reorganized the Inspector settings menu to add new lighting and camera control properties.
+- Small squared-ratio buttons have been replaced with round icons to enchance UI aesthetics.
+- Switched the 'Graphics' section in the Inspector to 'Rendering', to re-implement new section.
+- The sorter can now switch between lists of active species, viruses, and extinction records.
+- The session control and cell inspector toolbars are now grouped within layout components.;
+Fixes:
+- Function toolbar now expands to show full toolset on mobile layouts.;

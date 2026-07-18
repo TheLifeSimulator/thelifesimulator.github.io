@@ -1,0 +1,18 @@
+h1
+{
+    padding: var(--spacing-single);
+}
+.flex .columns
+{
+    flex-grow: 1;
+}
+#options
+{
+    display: flex;
+    gap: var(--spacing-single);
+    padding: var(--spacing-double);
+}
+#options button
+{
+    width: 100%;
+}

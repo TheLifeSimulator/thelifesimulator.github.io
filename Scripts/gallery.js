@@ -1,18 +1,31 @@
 
-/* Methods */
-function load(id, folder, screenshots)
+/* Settings */
+let gallery;
+let container;
+/* Methods */ 
+function gallery_add(id, path, type, description)
 {
     var gallery = document.getElementById(id);
-    if (gallery != null)
+    if (!gallery) return;
+    var container = gallery.querySelector('#content');
+    if (!container) return;
+    var img = document.createElement('img');
+    img.src = path;
+    img.alt = description;
+    img.className = type;
+    container.appendChild(img);
+}
+function gallery_load(id, path) 
+{
+    fetch(path)
+    .then(response => 
     {
-        var container = gallery.querySelector('#content');
-        screenshots.forEach(path => 
-        {
-            var img = document.createElement('img');
-            img.src = folder + "/" + path;
-            img.alt = 'Screenshot';
-            img.className = 'screenshot';
-            container.appendChild(img);
-        });
-    }
+        if (!response.ok) { throw new Error('Could not read JSON registry!'); }
+        return response.json();
+    })
+    .then(data => 
+    {
+        data.files.forEach(file => { gallery_add(id, `${data.directory}/${file}`, 'screenshot', "Screenshot");});
+    })
+    .catch(error => console.error('Failed to load assets dynamically:', error));
 }

@@ -22,20 +22,11 @@
         <script src="../Scripts/accessibility.js" defer></script>
         <script src="../Scripts/forms.js" defer></script>
         <script src="../Scripts/contact.js" defer></script>
+        <script src="../Scripts/layout.js" defer></script>
     </head>
-    <body>
-        <button onclick="window.location.href='#content'" id="skip">Skip to content.</button>
-        <header>
-            <div class="branding">
-                <h2 class="title"><a href="../index.html">LifeSimulator</a></h2>
-            </div>
-            <div class="navigation">
-                <button class="menu"><a id="about" href="about.html">?</a></button>
-                <button class="menu"><a class="current" id="contact" href="contact.html">@</a></button>
-                <p class="divider">|</p>
-                <button class="menu"><a id="docs" href="../construction.html">/</a></button>
-            </div>
-        </header>
+    <body id="body">
+        <div id="accessibility"></div>
+        <header id="header" class="contact"></header>
         <main id="content">
             <div class="ribbon" id="shadowed" style="background-color: var(--color-light-accent);">
                 <h3 class="title">Send a message!</h3>
@@ -107,9 +98,6 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <p id="copyright">© 2026 LifeSimulator</p>
-        </footer>
-        <button id="return" aria-label="Return to top.">↑</button>
+        <footer id="footer"></footer>
     </body>
 </html>

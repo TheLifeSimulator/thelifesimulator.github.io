@@ -23,7 +23,7 @@
     transform: translateY(-5px);
 }
 /* Content */
-.card .tag
+.card #tag
 {
     font-size: var(--scale-single);
     font-weight: var(--weigh-bold);
