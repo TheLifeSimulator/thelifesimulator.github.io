@@ -13,7 +13,6 @@
 }
 .banner:nth-of-type(odd)
 {
-    background-color: var(--color-light-background);
     box-shadow: var(--shadow-box);
     color: var(--color-standard-text);
 }

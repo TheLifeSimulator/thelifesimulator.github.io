@@ -69,3 +69,22 @@
     padding-bottom: var(--spacing-standard);
     margin-left: var(--spacing-double);
 }
+#links
+{
+    display: flex;
+    background-color: var(--color-dark-accent);
+    gap: var(--spacing-single);
+    font-size: var(--scale-single);
+    margin: var(--spacing-single);
+    padding: var(--spacing-double);
+}
+#links a
+{
+    color: var(--color-standard-text);
+    font-weight: var(--weight-standard);
+    font-size: var(--scale-standard);
+}
+#links button
+{
+    width: 100%;
+}

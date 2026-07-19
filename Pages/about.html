@@ -16,31 +16,27 @@
         <link rel="stylesheet" href="../Styles/Components/card.css">
         <link rel="stylesheet" href="../Styles/Components/flex.css">
         <link rel="stylesheet" href="../Styles/Components/images.css">
-        <!-- Scripts -->
+        <!-- Layout -->
         <script src="../Scripts/accessibility.js" defer></script>
-        <script src="../Scripts/layout.js" defer></script>
+        <script src="../Scripts/layout.js"></script>
+        <script src="../Scripts/assets.js"></script>
+        <!-- Component -->
+        <script src="../Scripts/card.js"></script>
+        <script src="../Scripts/banner.js"></script>
     </head>
     <body id="body">
         <div id="accessibility"></div>
         <header id="header" class="about"></header>
         <main id="content">
             <div class="stack">
-                 <div class="banner" style="background-color: var(--color-dark-accent);">
-                    <h2 class="title">Hi, I'm <b><a class="underline" href="https://lifesimulator.itch.io/">LifeSimulator</a></b>!</h2>
-                    <p class="description">I make simulation games on <strong>Itch.io</strong> using Unity Editor!</p>
+                <div id="banner" style="background-color: var(--color-dark-accent);">
+                    <script>card("banner", "banner", null, "../Assets/Elements/banner.info");</script>
                 </div>
                 <img class="strip" src="../Assets/Images/Strips/LifeSim_Strip_1.png">
                 <div class="flex">
                     <div class="columns">
-                        <div class="column">
-                            <div class="card">
-                                <div class="card" id="tag" style="width: 6.5rem;"><p class="tag">July 13, 2026</p></div>
-                                <img class="cover" src="../Assets/Images/Strips/LifeSim_Strip_2.png">
-                                <div class="card">
-                                    <em class="title"><strong>Hello there!</strong></em>
-                                    <p class="content">My name is Jay! I love programming, and I have a passion for simulation games. When I'm not developing my own person projects, I work as a freelance web designer. I'm hoping people will enjoy my games, and that I will continue posting new projects as time goes on! Thank you for taking an interest in me, please feel free to let me know what you think of my current game <em><strong>LifeSim</strong></em>! I have a lot of interesting ideas I plan on implementing, but I would love feedback to help me along the way! :D</p>
-                                </div>
-                            </div>
+                        <div class="column" id="profile">
+                            <script>card("profile", "card", null, "../Assets/Elements/profile.info")</script>
                         </div>
                     </div>
                 </div>

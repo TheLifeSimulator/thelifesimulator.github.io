@@ -18,11 +18,14 @@
         <link rel="stylesheet" href="../Styles/Components/images.css">
         <link rel="stylesheet" href="../Styles/Components/input.css">
         <link rel="stylesheet" href="../Styles/Components/ribbon.css">
-        <!-- Scripts -->
+        <!-- Layout -->
         <script src="../Scripts/accessibility.js" defer></script>
-        <script src="../Scripts/forms.js" defer></script>
         <script src="../Scripts/contact.js" defer></script>
         <script src="../Scripts/layout.js" defer></script>
+        <script src="../Scripts/assets.js"></script>
+        <!-- Components -->
+        <script src="../Scripts/card.js"></script>
+        <script src="../Scripts/forms.js" defer></script>
     </head>
     <body id="body">
         <div id="accessibility"></div>
@@ -40,7 +43,7 @@
             </div>
             <img class="cover" src="../Assets/Images/LifeSim_Compact.png">
             <div class="flex">
-                <div class="columns">
+                <div class="columns" id="forms">
                     <div class="card" id="form">
                         <h1 class="title">Submit a <b>bug or help request</b>.</h1>
                         <form class="interface" id="contact" action="/contact" method="post">
@@ -73,28 +76,7 @@
                         <p class="disclaimer">* This field is required.<br>
                             Your personal information will not be sold or distributed to any other third party.</p>
                     </div>
-                    <div class="card" id="information">
-                        <h1 class="title">Want to be direct?</h1>
-                        <p class="subtitle">There are other ways to connect!<br>If you'd like to <em>chat</em> sooner, here's how:</p>
-                        <ul class="list">
-                            <li><em>For game related questions and issues:</em><br>
-                                <br>
-                                Send a message over the help form with relevant information.<br>
-                                Be as <b>detailed as possible</b> when describing your bug.<br>
-                            </li><br>
-                            <li><em>Message me over email at <a href="mailto:thelifesimulator@gmail.com">thelifesimulator@gmail.com</a>:</em><br>
-                                <br>
-                                I'll be sure to follow up in about <b>48 hours</b> to provide an update.<br>
-                                If you need to send screenshots relating to your bug, be sure to send them from the same email address.<br>
-                            </li><br>
-                            <lI><em>You can also find me on these websites:<br></em></lI>
-                            <div class="card" id="links">
-                                <p class="content"><a href="https://lifesimulator.itch.io/">@LifeSimulator</a> on <em>Itch</em></p>
-                                <p class="content"><a href="https://github.com/TheLifeSimulator">@TheLifeSimulator</a> on <em>GitHub</em></p>
-                                <p class="content"><a href="https://play.unity.com/en/user/3d9ea609-8a01-4d32-87d4-be1bc4bb88f6">@TheLifeSimultor</a> on <em>Unity Play</em></p>
-                            </div>
-                        </ul>
-                    </div>
+                    <script>card("forms", "card", null, "../Assets/Elements/contact.info", "information");</script>
                 </div>
             </div>
         </main>

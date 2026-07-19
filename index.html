@@ -16,51 +16,35 @@
         <link rel="stylesheet" href="Styles/Components/flex.css">
         <link rel="stylesheet" href="Styles/Components/hero.css">
         <link rel="stylesheet" href="Styles/Components/images.css">
-        <!-- Scripts -->
+         <!-- Layout -->
         <script src="Scripts/accessibility.js" defer></script>
         <script src="Scripts/gallery.js" defer></script>
         <script src="Scripts/index.js" defer></script>
-        <script src="Scripts/layout.js" defer></script>
-        <script src="Scripts/log.js" defer></script>
+        <script src="Scripts/layout.js"></script>
+        <script src="Scripts/assets.js"></script>
+        <!-- Components -->
+        <script src="Scripts/card.js"></script>
+        <script src="Scripts/hero.js"></script>
+        <script src="Scripts/log.js"></script>
     </head>
     <body id="body">
         <div id="accessibility"></div>
         <header id="header"></header>
         <main id="content">
-            <div class="hero" id="visual" style="background-image: url(Assets/Images/LifeSim_Hero.png);">
-                <h1 class="title">LifeSim</h1>
-                <h3 class="description">A modern cellular evolutionary simulator.</em></h3>
-                <div class="controls">
-                    <button><a href="https://lifesimulator.itch.io/lifesim'">Buy Now</a></button>
-                </div>
-                <p class="disclaimer">Try out the free browser <em>DEMO</em> below! ↓</p>
+            <div id="hero">
+                <script>hero("hero", "Assets/Elements/hero.info");</script>
             </div>
             <div class="flex">
                 <div class="columns">
                     <div class="column">
                         <h2 class="title">Description</h2>
-                        <div class="card">
-                            <img class="cover" src="Assets/Images/LifeSim_Cover.png">
-                            <p class="content"><strong>LifeSim</strong> is an interactive evolutionary sandbox where you watch, or influence, digital organisms evolve over hundreds of generations. Cells compete for resources, reproduce with genetic variation, and adapt to their environment.</p>
-                            <p class="content">You can observe passively or intervene directly. Inspect or modify any cell's genetics, and directly control their behavior. Force mutations. Infect or cure populations. Endless simulations, in an infinite space.</p>
-                            <div class="card">
-                                <h4 class="subtitle">How is it different?</h4>
-                                <ul class="list">
-                                    <li>Behaviors, interactions, & speciation are all emergent from simple rules, & never the same twice.</li>
-                                    <li>Immunity, predation, and reproduction compete as evolutionary pressures that spur continuous adaptation.</li>
-                                    <li>Viruses mutate independently inside hosts, & follow genetic lineages, forcing an evolutionary arms race.</li>
-                                </ul>
-                            </div>
-                            <p class="description"><em>In <strong>LifeSim</strong>, there are no predetermined outcomes. Watch real emergence arise from genetic variance and viral pressure.</em></p>
-                            <div class="controls">
-                                <button><a href="https://lifesimulator.itch.io/lifesim-demo'">Itch</a></button>
-                                <button><a href="https://play.unity.com/en/games/11efddc8-3649-4b59-93eb-40856d477ca6/lifesim">Unity</a></button>
-                            </div>
+                        <div id="description">
+                            <script>card("description", "card", null, "Assets/Elements/description.info");</script>
                         </div>
                         <h2 class="title">Updates</h2>
                         <div id="logs"></div>
-                        <div class="controls">
-                            <button><a href="https://lifesimulator.itch.io/lifesim/devlog">View More</a></button>
+                        <div id="controls">
+                            <script>controls(document.getElementById("controls"), [ "View More = https://lifesimulator.itch.io/lifesim/devlog" ] )</script>
                         </div>
                     </div>
                     <div id="screenshots" class="column"  style="width: 100%">
