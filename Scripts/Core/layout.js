@@ -260,5 +260,5 @@ document.addEventListener("DOMContentLoaded", () =>
     })
     /* Footer */
     var footer = document.getElementById("footer");
-    instance(footer, "p", null, "copyright", "© 2026 LifeSimulator LLC");
+    instance(footer, "p", null, "copyright", "© 2026 LifeSimulator");
 });
