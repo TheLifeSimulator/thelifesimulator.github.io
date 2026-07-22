@@ -34,7 +34,7 @@ class Log
     }
 }
 /* Settings */
-const version = "0.1.6.A";
+const version = "0.1.7.A";
 /* Methods */
 function logs(id, path) 
 {

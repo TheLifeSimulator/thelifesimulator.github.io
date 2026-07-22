@@ -1,0 +1,14 @@
+Date: 07/22/2026;
+Release: 0;
+Build: 1;
+Revision: 7;
+Description: Minior graphical enhancements, faster session saving & loading, & project maintenance.;
+Additions:
+- Analytic bar charts now visually represent data using a color gradient.;
+Changes:
+- Altered interface sprites for rounder corners and dynamic filling.
+- Cells now utilize a slighlty shiner standardized lit shader than before.
+- Cleaned up project files, and deleted unused items to reduce storage space.
+- Rebuilt dynamic asset import itemization, so sessions now save and load faster.;
+Fixes:
+- Addressed an issue where system generated Linux files would crash the game.;
