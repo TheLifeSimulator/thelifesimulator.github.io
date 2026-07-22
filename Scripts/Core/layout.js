@@ -24,6 +24,7 @@ function build(type, tags)
                 break;
             }
             case "cover":
+            case "screenshot":
             {
                 image(container, lowered, value, lowered);
                 break;
