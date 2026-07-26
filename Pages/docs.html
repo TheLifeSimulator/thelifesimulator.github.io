@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LifeSimulator | Docs</title>
+        <title>LifeSimulator | Documents</title>
         <link rel="icon" type="image/x-icon" href="../Assets/Icons/favicon.ico">
         <!-- Core -->
         <link rel="stylesheet" href="../Styles/Pages/docs.css">
@@ -34,8 +34,9 @@
                     <div id="showcase" class="column" style="flex-basis: 66%;">
                         <h2 class="title">News</h2>
                         <div id="latest">
-                            <script>card("latest", "card", null, "../Assets/News/Demo/V." + version + ".info")</script>
                             <script>card("latest", "card", null, "../Assets/News/Updates/V." + version + ".info")</script>
+                            <script>card("latest", "card", null, "../Assets/News/Demo/V." + version + ".info")</script>
+                            <script>card("latest", "card", null, "../Assets/News/Snapshots/V." + version + ".info")</script>
                             <script>log("latest", "../Assets/Releases/Alpha/V." + version + ".info");</script>
                         </div>
                         <script>controls(document.getElementById("showcase"), [ "View More = https://lifesimulator.itch.io/lifesim/devlog" ])</script>

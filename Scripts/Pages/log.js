@@ -1,10 +1,10 @@
-function set(legacy, revision, release)
+function set(legacy, revision, release, archive)
 {
     let icon = "LifeSim_MacOS.png";
     if (legacy)
     {
         var root = document.documentElement;
-        root.style.setProperty('--color-light-accent', 'rgb(0, 125, 50)');
+        root.style.setProperty('--color-dark-accent', 'rgb(0, 125, 50)');
         root.style.setProperty('--color-standard-accent', 'rgb(0, 150, 75)');
         root.style.setProperty('--color-light-accent', 'rgb(0, 175, 100)');
         icon = "LifeSim_Legacy.png";
@@ -20,12 +20,23 @@ function set(legacy, revision, release)
         header.className = revision;
         title.textContent = "LifeSim Version " + revision + " " + release;
         title.style.textAlign = "center"; 
-        card("post", "card", null, "/Assets/News/Updates/V." + current + ".info");
-        card("post", "card", null, "/Assets/News/Demo/V." + current + ".info");
-        card("post", "card", null, "/Assets/News/Snapshots/V." + current + ".info");
+        if (document.getElementById("news") != null)
+        {
+            card("post", "card", null, "/Assets/News/Updates/V." + current + ".info");
+            card("post", "card", null, "/Assets/News/Demo/V." + current + ".info");
+            card("post", "card", null, "/Assets/News/Snapshots/V." + current + ".info");
+        }
         log("entry", "/Assets/Releases/" + release + "/V." + current + ".info");
         var subnavigation = document.getElementById("subnavigation");
-        var menu = [ ["Documents", "docs"], ["Releases", "releases"], ["Alpha", "Releases/" + release.toLowerCase()], [current, "Releases/" + release + "/" + current] ];
+        var menu = [];
+        if (archive)
+        {
+            menu = [ ["Documents", "docs"], ["Archive", "archive"], ["Alpha", "Archive/" + release.toLowerCase()], [current, "Archive/" + release + "/" + current] ];
+        }
+        else 
+        {
+            menu = [ ["Documents", "docs"], ["Releases", "releases"], ["Alpha", "Releases/" + release.toLowerCase()], [current, "Releases/" + release + "/" + current] ];
+        }
         menu.forEach(item => 
         {
             var end = item[0] == current;

@@ -23,6 +23,12 @@
         <!-- Components -->
         <script src="../Scripts/Components/card.js"></script>
         <script src="../Scripts/Components/log.js"></script>
+        <script>
+            var root = document.documentElement;
+            root.style.setProperty('--color-dark-accent', 'rgb(0, 125, 50)');
+            root.style.setProperty('--color-standard-accent', 'rgb(0, 150, 75)');
+            root.style.setProperty('--color-light-accent', 'rgb(0, 175, 100)');
+        </script>
     </head>
     <body id="body">
         <div id="accessibility"></div>
@@ -34,11 +40,11 @@
         </div>
         <main id="content">
             <h1 class="title">Archive</h1>
-            <img class="logo" src="../Assets/Icons/LifeSim_MacOS.png">
+            <img class="logo" src="../Assets/Icons/LifeSim_Legacy.png">
             <div class="flex" id="sections">
                 <div class="columns">
                     <div class="column" id="logs" style="flex-basis:33%;">
-                        <script>card("logs", "div", null, "../Assets/Docs/archive.info");</script>
+                        <script>card("logs", "div", null, "../Assets/Documents/archive.info");</script>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@
     display: flex;
     background-color: var(--color-standard-background);
     box-shadow: var(--shadow-box);
+    flex-wrap: wrap;
     padding: 0.5em;
     position: sticky;
     align-content: center;
