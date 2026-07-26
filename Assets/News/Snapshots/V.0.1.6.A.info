@@ -1,0 +1,20 @@
+Date: 07/12/2026;
+Screenshot: /Assets/Images/News/Snapshots/LifeSim_Screenshot_V.0.1.6.A.png;
+Category: Updates;
+Title: Snapshot Version 0.1.6 Alpha;
+Content: Here's what you can expect in the latest <em><strong>Snapshot</strong></em> of <em>LifeSim</em>! This update adds new visual-based anayltical tools to track progress over a session.;
+Card:
+<h4 class="subtitle">Overview</h4>
+<ul class="list">
+    <li>Cells new have a layered model with a transparent membrane and nucleus.</li>
+    <li>View metrics, speciation, rendering, & statistics information using bar charts.</li>
+</ul>
+<h4 class="subtitle">Expected</h4>
+<ul class="list">
+    <li>Better icons for the analytics toolbar within the 'Details' panels.</li>
+    <li>Import and export functionality for analytical information within session files.</li>
+</ul>;
+Controls:
+Buy = https://lifesimulator.itch.io/lifesim,
+Demo = https://lifesimulator.itch.io/lifesim-demo,
+Unity = https://play.unity.com/en/games/11efddc8-3649-4b59-93eb-40856d477ca6/lifesim;

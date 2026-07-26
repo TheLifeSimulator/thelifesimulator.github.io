@@ -1,0 +1,20 @@
+Date: 07/26/2026;
+Screenshot: /Assets/Images/News/Snapshots/LifeSim_Screenshot_V.0.1.8.A.png;
+Category: Updates;
+Title: Snapshot Version 0.1.8 Alpha;
+Content: Here's what you can expect in the latest <em><strong>Snapshot</strong></em> of <em>LifeSim</em>! Improved web performance, a new theme, and developer debugging diagnostics.;
+Card:
+<h4 class="subtitle">Overview</h4>
+<ul class="list">
+    <li>New aesthetic changes including a new icon, accent color, and about panel.</li>
+    <li>Reduce asynchronous thread activity to optimize browser-based gameplay performance.</li>
+</ul>
+<h4 class="subtitle">Expected</h4>
+<ul class="list">
+    <li>Expanded debugging and diagnostic data for future maintainability.</li>
+    <li>Further bug identification and resolution.</li>
+</ul>;
+Controls:
+Buy = https://lifesimulator.itch.io/lifesim,
+Demo = https://lifesimulator.itch.io/lifesim-demo,
+Unity = https://play.unity.com/en/games/11efddc8-3649-4b59-93eb-40856d477ca6/lifesim;

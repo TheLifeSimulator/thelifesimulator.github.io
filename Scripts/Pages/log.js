@@ -22,6 +22,7 @@ function set(legacy, revision, release)
         title.style.textAlign = "center"; 
         card("post", "card", null, "/Assets/News/Updates/V." + current + ".info");
         card("post", "card", null, "/Assets/News/Demo/V." + current + ".info");
+        card("post", "card", null, "/Assets/News/Snapshots/V." + current + ".info");
         log("entry", "/Assets/Releases/" + release + "/V." + current + ".info");
         var subnavigation = document.getElementById("subnavigation");
         var menu = [ ["Documents", "docs"], ["Releases", "releases"], ["Alpha", "Releases/" + release.toLowerCase()], [current, "Releases/" + release + "/" + current] ];
