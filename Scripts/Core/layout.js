@@ -24,6 +24,7 @@ function build(type, tags)
                 break;
             }
             case "cover":
+            case "logo":
             case "screenshot":
             {
                 image(container, lowered, value, lowered);
@@ -228,9 +229,14 @@ document.addEventListener("DOMContentLoaded", () =>
     console.log("Building layout!");
     var header = document.getElementById("header");
     var branding = instance(header, "div", "branding", null);
-    var title = instance(branding, "h2", "title", null);
-    var link = element(title, "a", "LifeSimulator");
-    link.href = "../index.html";
+    var home = instance(branding, "button", "round", "home");
+    var logo = image(home, "logo", "/Assets/Icons/LifeSim_Logo.png", "LifeSim Logo");
+    /*var title = instance(branding, "h2", "title", null);
+    var link = element(title, "a", "LifeSimulator");*/
+    home.addEventListener('click', () => 
+    {
+        window.location.href = '/index.html';
+    });
     var navigation = instance(header, "div", "navigation", null);
     var menu = [ "about", "contact", "docs" ];
     menu.forEach(item => 
@@ -257,8 +263,10 @@ document.addEventListener("DOMContentLoaded", () =>
         }
         var button = instance(navigation, "button", "round", null);
         var label = instance(button, "a", item == header.className ? "current" : null, null, symbol)
-        label.href = "../Pages/" + item + ".html";
+        label.href = "/Pages/" + item + ".html";
     })
+    var toolbar = document.getElementById("toolbar");
+    var subnavigation = instance(toolbar, "div", "subnavigation", "subnavigation");
     /* Footer */
     var footer = document.getElementById("footer");
     instance(footer, "p", null, "copyright", "© 2026 LifeSimulator");

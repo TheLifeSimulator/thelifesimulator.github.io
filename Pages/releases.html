@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LifeSimulator | Docs</title>
+        <title>LifeSimulator | Releases</title>
         <link rel="icon" type="image/x-icon" href="../Assets/Icons/favicon.ico">
         <!-- Core -->
         <link rel="stylesheet" href="../Styles/Pages/docs.css">
         <link rel="stylesheet" href="../Styles/Core/accessibility.css">
         <link rel="stylesheet" href="../Styles/Core/layout.css">
+        <link rel="stylesheet" href="../Styles/Core/subnavigation.css">
         <link rel="stylesheet" href="../Styles/Core/theme.css">
         <!-- Components -->
         <link rel="stylesheet" href="../Styles/Components/buttons.css">
@@ -25,25 +26,19 @@
     </head>
     <body id="body">
         <div id="accessibility"></div>
-        <header id="header" class="docs"></header>
+        <header id="header" class="releases"></header>
+        <div class="subnavigation">
+            <button><a href="/Pages/docs.html">Documents</a></button>
+            <p>></p>
+            <button><a class="current" href="/Pages/releases.html">Releases</a></button>
+        </div>
         <main id="content">
-            <h1 class="title">Documents</h1>
-            <img class="cover" src="../Assets/Images/LifeSim_Splash.png">
+            <h1 class="title">Releases</h1>
+            <img class="logo" src="../Assets/Icons/LifeSim_MacOS.png">
             <div class="flex" id="sections">
                 <div class="columns">
-                    <div id="showcase" class="column" style="flex-basis: 66%;">
-                        <h2 class="title">News</h2>
-                        <div id="latest">
-                            <script>card("latest", "card", null, "../Assets/News/Demo/V." + version + ".info")</script>
-                            <script>card("latest", "card", null, "../Assets/News/Updates/V." + version + ".info")</script>
-                            <script>log("latest", "../Assets/Releases/Alpha/V." + version + ".info");</script>
-                        </div>
-                        <script>controls(document.getElementById("showcase"), [ "View More = https://lifesimulator.itch.io/lifesim/devlog" ])</script>
-                    </div>
-                    <div class="column" id="logs" style="flex-basis: 33%;">
-                        <h2 class="title">Logs</h2>
-                        <script>card("logs", "div", null, "../Assets/News/updates.info");</script>
-                        <script>card("logs", "div", null, "../Assets/News/archive.info");</script>
+                    <div class="column" id="logs" style="flex-basis:33%;">
+                        <script>card("logs", "div", null, "../Assets/Docs/releases.info");</script>
                     </div>
                 </div>
             </div>

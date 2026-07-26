@@ -34,7 +34,7 @@ class Log
     }
 }
 /* Settings */
-const version = "0.1.7.A";
+const version = "0.1.8.A";
 /* Methods */
 function logs(id, path) 
 {
@@ -42,7 +42,9 @@ function logs(id, path)
 }
 function log(id, file) 
 { 
-    extract(file).then(data => 
+    var extraction = extract(file);
+    if (extraction == null) { return; }
+    extraction.then(data => 
     {
         var container = document.getElementById(id);
         if (!container) return;

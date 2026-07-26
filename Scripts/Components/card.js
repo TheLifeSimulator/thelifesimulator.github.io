@@ -11,11 +11,13 @@ function cards(id, path)
 }
 function card(id, type, identity, file) 
 { 
-    extract(file).then(data => 
+    var extraction = extract(file);
+    if (extraction == null) { return; }
+    extraction.then(data => 
     { 
         var container = document.getElementById(id);
         if (!container) return;
-        if (data == null) { return; }
+        if (data == null ) { return; }
         let card = new Card(type, itemize(data));
         container.appendChild(card.Container);
         if (identity != null) { card.Container.id = identity; }

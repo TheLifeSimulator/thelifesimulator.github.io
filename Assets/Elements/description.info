@@ -1,4 +1,4 @@
-Cover: Assets/Images/LifeSim_Cover.png;
+Logo: Assets/Icons/LifeSim_MacOS.png;
 Content: 
 <strong>LifeSim</strong> is an interactive evolutionary sandbox where you watch, or influence, digital organisms evolve over hundreds of generations. Cells compete for resources, reproduce with genetic variation, and adapt to their environment.<br><br>
 You can observe passively or intervene directly. Inspect or modify any cell's genetics, and directly control their behavior. Force mutations. Infect or cure populations. Endless simulations, in an infinite space.;

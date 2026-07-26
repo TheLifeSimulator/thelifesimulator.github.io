@@ -26,10 +26,6 @@ header
     top: 0; 
     z-index: 4;
 }
-.branding
-{
-    margin-left: 1rem;
-}
 .branding .title
 {
     font-size: var(--scale-expanded);
@@ -41,6 +37,16 @@ header
 .branding a
 {
     text-decoration: none;
+}
+.branding #home
+{
+    padding: 0;
+}
+.branding #home .logo
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 .branding .tag
 {
@@ -101,7 +107,6 @@ footer
     {
         align-items: center;
         display: flex;
-        flex-basis: 40%;
     }
     .navigation
     {
@@ -113,6 +118,9 @@ footer
 {
     .branding
     {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0;
     }
     .branding .title
@@ -130,7 +138,7 @@ footer
     header
     {
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
     }

@@ -2,7 +2,7 @@
 {
     align-items: center;
     display: flex;
-    background-color: white;
+    background-color: var(--color-standard-background);
     box-shadow: var(--shadow-box);
     padding: 0.5em;
     position: sticky;
@@ -10,17 +10,22 @@
     top: 0; 
     z-index: 3;
 }
-.subnavigation a, .subnavigation .divider
+.subnavigation button
 {
-    font-size: clamp(0.75rem, 1vw, 1rem);
-    font-weight: 200;
-    color: black;
-    text-decoration: none;
-    padding: 0 0.25rem;
+    background-color: var(--color-light-background);
+    padding: var(--spacing-standard);
+    margin: var(--spacing-standard);
+    width: auto;
 }
-.subnavigation a:hover, .subnavigation .current
+.subnavigation .current
 {
-    color: var(--color-standard-accent);
-    font-size: clamp(1rem, 1.25vw, 1.25rem);
-    font-weight: 400;
+    color: var(--color-light-accent);
+}
+.subnavigation .divider
+{
+    color: var(--color-standard-text);
+    font-size: var(--scale-expanded);
+    font-weight: var(--weight-thin);
+    margin: var(--spacing-minimal);
+    z-index: 3;
 }

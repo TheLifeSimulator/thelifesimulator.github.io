@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LifeSimulator | Alpha</title>
+        <link rel="icon" type="image/x-icon" href="/Assets/Icons/favicon.ico">
+        <!-- Core -->
+        <link rel="stylesheet" href="/Styles/Pages/docs.css">
+        <link rel="stylesheet" href="/Styles/Core/accessibility.css">
+        <link rel="stylesheet" href="/Styles/Core/layout.css">
+        <link rel="stylesheet" href="/Styles/Core/subnavigation.css">
+        <link rel="stylesheet" href="/Styles/Core/theme.css">
+        <!-- Components -->
+        <link rel="stylesheet" href="/Styles/Components/buttons.css">
+        <link rel="stylesheet" href="/Styles/Components/card.css">
+        <link rel="stylesheet" href="/Styles/Components/flex.css">
+        <link rel="stylesheet" href="/Styles/Components/images.css">
+         <!-- Layout -->
+        <script src="/Scripts/Core/accessibility.js" defer></script>
+        <script src="/Scripts/Core/layout.js"></script>
+        <script src="/Scripts/Core/assets.js"></script>
+        <!-- Components -->
+        <script src="/Scripts/Components/card.js"></script>
+        <script src="/Scripts/Components/log.js"></script>
+    </head>
+    <body id="body">
+        <div id="accessibility"></div>
+        <header id="header" class="releases"></header>
+        <div class="subnavigation">
+            <button><a href="/Pages/docs.html">Documents</a></button>
+            <p>></p>
+            <button><a href="/Pages/archive.html">Archive</a></button>
+            <p>></p>
+            <button><a class="current" href="/Pages/Archive/alpha.html">Alpha</a></button>
+        </div>
+        <main id="content">
+            <h1 class="title">Alpha</h1>
+            <img class="logo" src="/Assets/Icons/LifeSim_MacOS.png">
+            <div class="flex" id="sections">
+                <div class="columns">
+                    <div class="column" id="logs" style="flex-basis:33%;">
+                        <script>card("logs", "div", null, "/Assets/Docs/Archive/alpha.info");</script>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+</html>

@@ -5,6 +5,12 @@
     margin: 1rem auto; 
     width: 95%;
 }
+.logo
+{
+    align-self: center;
+    margin: 1rem auto; 
+    width: 25%;
+}
 .screenshot
 {
     margin: 1rem auto; 

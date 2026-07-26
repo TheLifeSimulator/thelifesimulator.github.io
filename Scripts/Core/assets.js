@@ -32,11 +32,14 @@ function itemize(content)
     });
     return tags;
 }
-function extract(path)
+async function extract(path)
 {
     if (!path.endsWith('.info')) { return null; }
-    return fetch(path)
-    .then(response => response.text())
-    .then(data => { return data; })
-    .catch(error => {  return null; });
+    try 
+    {
+        const response = await fetch(path);
+        if (!response.ok || response.status == "400") { return null; }
+        return  await response.text() ?? null;
+    } 
+    catch (error) { return null; }
 }

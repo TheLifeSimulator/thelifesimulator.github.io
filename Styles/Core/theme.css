@@ -13,12 +13,12 @@
     --color-dark-background: rgb(10, 10, 10);
     --color-standard-background: rgb(20, 20, 20);
     --color-light-background: rgb(30, 30, 30);
-    --color-dark-accent: rgb(0, 75, 40);
-    --color-standard-accent: rgb(0,100,50);
-    --color-light-accent: rgb(0, 125, 60);
-    --color-dark-shadow: rgb(0,0,0);
-    --color-standard-shadow: rgb(5,5,5);
-    --color-light-shadow: rgb(10,10,710);
+    --color-dark-accent: rgb(0, 117, 245);
+    --color-standard-accent: rgb(0, 127, 255);
+    --color-light-accent: rgb(0, 137, 255);
+    --color-dark-shadow: rgb(0, 0, 0);
+    --color-standard-shadow: rgb(5, 5, 5);
+    --color-light-shadow: rgb(10, 10, 10);
     --color-standard-text: rgb(255, 255, 255);
     /* Font Sizing 1rem:100rem */
     --scale-quadruple: clamp(2rem, 4vw, 4rem);
@@ -84,7 +84,7 @@ a
 {
     :root
     {
-        --height-header: 70px;
+        --height-header: 90px;
     }
 }
 @media (max-width: 300px) 
