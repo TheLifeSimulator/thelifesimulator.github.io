@@ -31,11 +31,11 @@ function set(legacy, revision, release, archive)
         var menu = [];
         if (archive)
         {
-            menu = [ ["Documents", "docs"], ["Archive", "archive"], ["Alpha", "Archive/" + release.toLowerCase()], [current, "Archive/" + release + "/" + current] ];
+            menu = [ ["Documents", "docs"], ["Archive", "archive"], ["Alpha", "Archive/" + release.toLowerCase()], [current, "Archive/" + release + "/" + revision] ];
         }
         else 
         {
-            menu = [ ["Documents", "docs"], ["Releases", "releases"], ["Alpha", "Releases/" + release.toLowerCase()], [current, "Releases/" + release + "/" + current] ];
+            menu = [ ["Documents", "docs"], ["Releases", "releases"], ["Alpha", "Releases/" + release.toLowerCase()], [current, "Releases/" + release + "/" + revision] ];
         }
         menu.forEach(item => 
         {
