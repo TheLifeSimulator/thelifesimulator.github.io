@@ -2,13 +2,13 @@ Date: 07/29/2026;
 Release: 0;
 Build: 1;
 Revision: 8;
-Description: Web improvements, new app icons, & an updated debugging framework.;
+Description: Web improvements, new app icons, & an updated debugging framework;
 Additions:
-- Implemented new debugging output and error handling for better maintainability.;
+- Implemented new debugging output and error handling for better maintainability.
+- Revamped environmental system including a basic day/night cycle utilizing time-of-day.;
 Changes:
 - Changed the color of tags within version logs to match new application icon.
-- Made several aesthetic changes to the 'About' menu to refresh the design.
-- The new LifeSim Logo is displayed on the toolbar instead of the game title.
 - Reduced asynchronous thread activity to balance desktop & web performance.;
 Fixes:
-- Addressed an issue where application icons and version were not syncing during build.;
+- Addressed an issue where application icons and version were not syncing during build.
+- Identified a bug where environmental settings would not save and load properly.;
