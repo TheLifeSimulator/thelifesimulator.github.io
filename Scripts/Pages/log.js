@@ -10,7 +10,7 @@ function set(legacy, revision, release, archive)
         icon = "LifeSim_Legacy.png";
     }
     const current = revision + "." + release[0];
-    var title = document.title = "LifeSimulator | V." + current;
+    var title = document.title = "LifeSimulator | LifeSim V." + current;
     document.addEventListener("DOMContentLoaded", () => 
     {
         var cover = document.getElementById("cover");
